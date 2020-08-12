@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>679</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>672</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Open Hunter</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>-4</x>
+      <y>-1</y>
+      <width>701</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Compteur</string>
+     </attribute>
+     <widget class="QLabel" name="nb_Chaine">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nb_brise">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>150</y>
+        <width>31</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>33</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_Techniques">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>180</y>
+        <width>141</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Technique de chasse</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Proba">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>120</y>
+        <width>181</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_Proba">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>120</y>
+        <width>331</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Vous avez 1 chance sur&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_Chaine">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>171</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Votre chaîne est de : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_Choix_jeu">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>180</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Version de pokemon</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Techniques">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>210</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Rencontre naturelle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Soft Reset</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rencontre de Horde</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Méthode Masuda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Safari des Amis</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pêche à la chaîne</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>NaviDex</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Poké Radar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SOS</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="Choix_jeu">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>210</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Pokemon Or/Argent/Cristal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon Rubis/Saphir/Emeraude</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon Rouge Feu/Vert Feuille </string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon  Diamant/Perle/Platine</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon Or HeartGold/Argent SoulSilve</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon Noir/Blanc</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon Noir 2/Blanc 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon X/Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon Rubis Omega/Saphir Alpha</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon Soleil/Lune</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon Ultra Soleil/Ultra Lune</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon  Let's Go Pikachu/Let's Go Évoli</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pokemon Épée/Bouclier</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="bouton_Chaine">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>260</y>
+        <width>111</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>+1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Capture">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>280</y>
+        <width>121</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_Brise">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>171</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Vous en avez brisé : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bouton_Brise">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>111</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Brisée</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>10</y>
+        <width>131</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Charme chroma</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Charme">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>80</y>
+        <width>261</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Image">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>278</y>
+        <width>121</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <zorder>Image</zorder>
+     <zorder>nb_Chaine</zorder>
+     <zorder>nb_brise</zorder>
+     <zorder>lab_Techniques</zorder>
+     <zorder>Proba</zorder>
+     <zorder>lab_Proba</zorder>
+     <zorder>lab_Chaine</zorder>
+     <zorder>lab_Choix_jeu</zorder>
+     <zorder>Techniques</zorder>
+     <zorder>Choix_jeu</zorder>
+     <zorder>bouton_Chaine</zorder>
+     <zorder>Capture</zorder>
+     <zorder>lab_Brise</zorder>
+     <zorder>bouton_Brise</zorder>
+     <zorder>checkBox</zorder>
+     <zorder>Charme</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Shiny obtenu</string>
+     </attribute>
+     <widget class="QLabel" name="Obtenu">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>651</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>Techniques</tabstop>
+  <tabstop>bouton_Chaine</tabstop>
+  <tabstop>Capture</tabstop>
+  <tabstop>bouton_Brise</tabstop>
+  <tabstop>Choix_jeu</tabstop>
+  <tabstop>checkBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
